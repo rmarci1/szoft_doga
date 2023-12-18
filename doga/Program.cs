@@ -26,7 +26,16 @@ namespace doga
                     list.Add(szam);
                 }         
             }
-            
+            int legkisebb = list[0];
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (legkisebb > list[i])
+                {
+                    legkisebb = list[i];
+                }             
+            }
+            Console.WriteLine($"A legkisebb szám a listában az: {legkisebb}");
+
             Console.ReadKey();
 
         }
