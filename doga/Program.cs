@@ -26,15 +26,15 @@ namespace doga
                     list.Add(szam);
                 }         
             }
-            int legkisebb = list[0];
+            int legnagyobb = list[0];
             for (int i = 0; i < list.Count; i++)
             {
-                if (legkisebb > list[i])
+                if (legnagyobb < list[i])
                 {
-                    legkisebb = list[i];
-                }             
+                    legnagyobb = list[i];
+                }
             }
-            Console.WriteLine($"A legkisebb szám a listában az: {legkisebb}");
+            Console.WriteLine($"A legnagyobb szám a listában az:{legnagyobb} ");
 
             Console.ReadKey();
 
